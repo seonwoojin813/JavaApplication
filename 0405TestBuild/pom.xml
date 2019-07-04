@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>0405TestBuild</groupId>
+  <artifactId>0405TestBuild</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+  <!-- 소스 파일들의 디렉토리 설명  -->
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+        <!-- jdk 버전  -->
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <!-- 다운로드 받을 저장소 설정 
+  아무것도 작성하지 않으면 무조건 중앙 저장소에서 다운로드
+ 작성을 하면 작성을 한 곳에서 찾아보고 없으면 중앙 저장소로 갑니다. 
+ 공부를 할 때는 오라클 사용할 때만 설정
+ 오라클 라이브러리는 중앙 저장소에 없습니다. -->
+  <repositories>
+  </repositories>
+  
+  <!-- 라이브러리 의존성 설정  -->
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>6.0.6</version>
+</dependency>
+  
+  </dependencies>
+</project>

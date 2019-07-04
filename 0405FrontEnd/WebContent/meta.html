@@ -1,0 +1,43 @@
+<!-- html 에 대한 기본 설정  -->
+<!DOCTYPE html>
+
+<!-- 문서의 시작 -->
+<html>
+<!-- 파일에 옵션 설정  -->
+<head>
+<!-- 문서의 인코딩 설정 없으면 한글은 default설정이 되서 깨지게 됩니다. -->
+<meta charset="UTF-8">
+<!--  meta http-equiv="refresh" content="10 url=http://www.naver.com"/ 10초 후에 페이지 변-->
+<title>텍스트 관련 태그 </title>
+</head>
+<!-- 브라우저에 표시되는 영역  -->
+<body bgcolor = "green">
+	<h1 align = "center">큰 제목 </h1>
+	<h3>작은 제목 </h3>
+	<!-- b나 i 태그는 강조를 할 때 많이 사용합니다.  -->
+	<!-- br태그는 여러번 사용하면 여러번 줄 바꿈이 되지만 p 태그는 비어있는 상태로 여러번 사용해도 1번만 적용됩니다. -->
+	<p>문단 태그로 텍스트나 이미지 등을 배치할 때 많이 사용하는 태그입니다.</p>
+	<p>문단 태그로 <br />텍스트나 <b> 이미지 </b> 동물<i> 배치할 때 </i> 많이 사용하는 태그 입니다.</p>
+	<p align="center">가운데 맞춤</p>
+	<hr width="50%"/>
+	<p>10 &lt; 5 and 5 &gt; 10</p>
+	
+	<!-- 그림 파일은 링크라서 화면에 출력  -->
+	<p><a href="./giphy.gif"> no </a></p>
+	<!-- 파워포인트는 출력할 수 없어서 다운로드  -->
+	<p><a href="./외부데이터 활용.pdf"> data </a></p>
+	<p><a href="http://www,kakao.com" target=_blank">kakao</a></p>
+	
+	<div id = "display" name="display" width="300" height="300"></div>
+	
+</body>
+
+
+<script>
+	document.oncontextmenu = function(e){
+	alert("can't use right click");
+	return false;
+	}
+</script>
+
+</html>
